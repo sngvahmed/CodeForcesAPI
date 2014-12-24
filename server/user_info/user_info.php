@@ -33,5 +33,6 @@
 	    foreach ($array as $data){
 		    $_SESSION['ARRAY'] = $data;
 	    }
-	    header("Location: ../view/user_info_viewing.php");
+	 
+	    header("Location: ../../view/user_info/user_info_view.php");
 	?>

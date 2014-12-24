@@ -1,7 +1,7 @@
 <html> 
 	<head> 
-		<title> User Info </title> 
-		<link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		<title> User rating </title> 
+		<link href="../../bootstrap/css/bootstrap.min.css" rel="stylesheet">
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	</head> 
 
@@ -15,12 +15,12 @@
 
 
 		<div class = "container">
-	    <form action="../server/user_info.php" method="post">
+	    <form action="../../server/user_rate/user_rate.php" method="post">
 	        <div class="form-group">
 	            <label for="inputHandle">Handle</label>
 	            <input type="text" class="form-control" name="handle" id="handle" placeholder="handle">
 	        </div>
-	        <input type="submit">
+	        <input class="btn btn-danger" type="submit">
 	    </form>
 	</div>
 	</body>

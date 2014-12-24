@@ -1,7 +1,7 @@
 <html> 
 	<head> 
 		<title> User Info </title> 
-		<link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		<link href="../../bootstrap/css/bootstrap.min.css" rel="stylesheet">
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	</head> 
 
