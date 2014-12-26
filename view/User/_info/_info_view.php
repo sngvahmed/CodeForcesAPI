@@ -24,15 +24,23 @@
         	</thead>
         	<tbody>
 		    	<?php
+		    		error_reporting(E_ERROR);
 		    		session_start();
 					$var_value = $_SESSION['ARRAY'];
+					$myfile = fopen("/home/sngv/Desktop/user_info.txt", "w");
 					foreach ($var_value as $key => $value){
 					    echo "<tr><td>";
 					    print_r($key);
+					    fwrite($myfile, $key);
+					    fwrite($myfile, ":");
 					    echo "</td><td>";
 					    print_r($value);
+					    fwrite($myfile, $value);
 					    echo "</td></tr>";
+					    fwrite($myfile, "\n");
 				    }
+				    
+					fclose($myfile);
 				?>
 			</tbody>
 			</table>
